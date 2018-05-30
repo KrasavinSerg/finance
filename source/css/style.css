@@ -1,7 +1,8 @@
 body {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   font-family: 'Myriad Pro', 'Arial', sans-serif;
-  width: 1920px;
+  min-width: 1280px;
 }
 
 img {
@@ -22,7 +23,7 @@ img {
 
 .header__container {
   margin: 0 auto;
-  width: 1540px;
+  max-width: 1140px;
 }
 
 .main-nav {
@@ -61,7 +62,7 @@ img {
 }
 
 .page-main__image {
-  width: 1920px;
+  max-width: 1920px;
   height: 920px;
   margin: 0 auto;
   background: #838381 url('../img/header_bg.jpg') no-repeat center;
@@ -108,7 +109,8 @@ img {
 }
 
 .features {
-  width: 1920px;
+  max-width: 1920px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   margin-top: -82px;
@@ -237,8 +239,8 @@ img {
 }
 
 .values {
-  width: 1920px;
-  height: 733px;
+  max-width: 1920px;
+  height: 613px;
   margin: 0 auto;
   background: #fff url('../img/values-bg.jpg') no-repeat top;
   background-size: cover;
@@ -252,8 +254,8 @@ img {
 
 .values__title {
   margin: 0;
-  margin-bottom: 35px;
-  padding-top: 135px;
+  margin-bottom: 25px;
+  padding-top: 115px;
   padding-left: 390px;
   font-size: 22px;
   line-height: 48px;
@@ -288,8 +290,8 @@ img {
 
 .values__percent {
   display: block;
-  margin-top: 35px;
-  margin-bottom: 40px;
+  margin-top: 15px;
+  margin-bottom: 20px;
   padding-left: 500px;
   font-size: 40px;
   line-height: 60px;
@@ -299,12 +301,13 @@ img {
 
 .values__img {
   position: absolute;
-  top: 370px;
+  top: 295px;
   right: 90px;
 }
 
 .expert {
-  width: 1920px;
+  max-width: 1920px;
+  margin: 0 auto;
   background: #009688 url('../img/expert-bg.jpg') no-repeat;
   padding-top: 130px;
   padding-bottom: 130px;
@@ -379,9 +382,10 @@ img {
 }
 
 .services {
-  width: 1920px;
+  max-width: 1920px;
+  margin: 0 auto;
   padding-top: 110px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
   background: #fff url('../img/services-bg.jpg') no-repeat 0 150px;
   background-size: contain;
 }
@@ -498,7 +502,8 @@ img {
 }
 
 .offer {
-  width: 1920px;
+  max-width: 1920px;
+  margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 100px;
 }
@@ -515,7 +520,7 @@ img {
 
 .offer__text {
   margin: 0;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
   font-size: 18px;
   line-height: 38px;
   color: #757575;
@@ -612,6 +617,8 @@ img {
 }
 
 .twitter {
+  max-width: 1920px;
+  margin: 0 auto;
   background-color: #009688;
 }
 
@@ -640,6 +647,8 @@ img {
 }
 
 .page-footer {
+  max-width: 1920px;
+  margin: 0 auto;
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #313131;
@@ -772,7 +781,7 @@ img {
 }
 
 .mailing__form-input {
-  width: 235px;
+  width: 245px;
   height: 32px;
   margin-bottom: 10px;
   border: none;
@@ -937,6 +946,8 @@ img {
 }
 
 .footer-nav {
+  max-width: 1920px;
+  margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #292929;
