@@ -53,21 +53,21 @@ img {
 }
 
 .main-nav__link:hover {
-  color: #ffd27f;
+  color: #f5cfa4;
 }
 
-.page-main__container {
-  margin: 0 auto;
-  width: 1140px;
-}
-
-.page-main__image {
+.page-main {
   max-width: 1920px;
   height: 920px;
   margin: 0 auto;
   background: #838381 url('../img/header_bg.jpg') no-repeat center;
   background-size: cover;
   margin-top: -95px;
+}
+
+.page-main__container {
+  margin: 0 auto;
+  width: 1140px;
 }
 
 .page-main__title {
@@ -105,7 +105,7 @@ img {
 }
 
 .page-main__btn:hover {
-  background-color: #ffd27f;
+  background-color: #f5cfa4;
   color: #fff;
 }
 
@@ -147,7 +147,7 @@ img {
   margin-bottom: 115px;
 }
 
-.features__btn {
+.features__info a {
   display: block;
   width: 150px;
   padding-top: 15px;
@@ -163,8 +163,8 @@ img {
   cursor: pointer;
 }
 
-.features__btn:hover {
-  background-color: #ffd27f;
+.features__info a:hover {
+  background-color: #f5cfa4;
   color: #fff;
 }
 
@@ -261,7 +261,7 @@ img {
   font-size: 22px;
   line-height: 48px;
   color: #444444;
-  font-weight: 700px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -271,7 +271,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: #757575;
-  font-weight: 400px;
+  font-weight: 400;
 }
 
 .values__text--info-1 {
@@ -377,6 +377,7 @@ img {
   text-decoration: none;
   cursor: pointer;  
 }
+
 .expert__btn-contact:hover {
   color: #009688;
   background-color: #fff;
@@ -449,7 +450,7 @@ img {
   top: 10px;
   width: 49px;
   height: 45px;
-  background:url('../img/icon-audit.png') no-repeat center;
+  background: url('../img/icon-audit.png') no-repeat center;
 }
 
 .services__item--business::before {
@@ -459,7 +460,7 @@ img {
   top: 10px;
   width: 48px;
   height: 40px;
-  background:url('../img/icon-business-serv.png') no-repeat center;
+  background: url('../img/icon-business-serv.png') no-repeat center;
 }
 
 .services__item--financial::before {
@@ -469,7 +470,7 @@ img {
   top: 10px;
   width: 54px;
   height: 28px;
-  background:url('../img/icon-financial-plan.png') no-repeat center;
+  background: url('../img/icon-financial-plan.png') no-repeat center;
 }
 
 .services__item--it::before {
@@ -479,7 +480,7 @@ img {
   top: 10px;
   width: 41px;
   height: 33px;
-  background:url('../img/icon-it.png') no-repeat center;
+  background: url('../img/icon-it.png') no-repeat center;
 }
 
 .services__item--year::before {
@@ -489,7 +490,7 @@ img {
   top: 10px;
   width: 36px;
   height: 53px;
-  background:url('../img/icon-Year-End.png') no-repeat center;
+  background: url('../img/icon-Year-End.png') no-repeat center;
 }
 
 .services__item--tax::before {
@@ -499,7 +500,7 @@ img {
   top: 10px;
   width: 50px;
   height: 50px;
-  background:url('../img/icon-Tax-Advisory.png') no-repeat center;
+  background: url('../img/icon-Tax-Advisory.png') no-repeat center;
 }
 
 .offer {
@@ -633,7 +634,7 @@ img {
 
 .twitter__container img {
   margin-left: 100px;
-  margin-right: 270px;
+  margin-right: 210px;
 }
 
 .twitter__container a {
@@ -644,7 +645,12 @@ img {
   font-weight: 400;
   text-decoration: none;
   color: #fff;
+  opacity: 0.8;
   cursor: pointer;
+}
+
+.twitter__container a:hover {
+  opacity: 1;
 }
 
 .page-footer {
@@ -810,7 +816,7 @@ img {
 }
 
 .mailing__form-btn:hover {
-  background-color: #00968793;
+  background-color: #02c7b3;
 }
 
 .mailing__form-btn::before {
@@ -859,7 +865,10 @@ img {
   color: #fff;
 }
 
-.mailing__icon-tw {
+.mailing__icon-tw,
+.mailing__icon-fb,
+.mailing__icon-yt,
+.mailing__icon-inst {
   fill: #6b6b6b;
 }
 
@@ -868,27 +877,15 @@ img {
   transform: scale(1.3);
 }
 
-.mailing__icon-fb {
-  fill: #6b6b6b;
-}
-
 .mailing__icon-fb:hover {
   fill: #4267B2;
   transform: scale(1.3);
-}
-
-.mailing__icon-yt {
-  fill: #6b6b6b;
 }
 
 .mailing__icon-yt:hover {
   fill: #FF0000;
   transform: scale(1.3);
 } 
-
-.mailing__icon-inst {
-  fill: #6b6b6b;
-}
 
 .mailing__icon-inst:hover {
   fill: #c69;
@@ -917,33 +914,72 @@ img {
 }
 
 .contacts__text--email {
+  position: relative;
   margin: 0;
   margin-bottom: 10px;
   padding-top: 10px;
+  padding-left: 25px;
   font-size: 16px;
   line-height: 22px;
   color: #969595;
   border-top: 1px solid #474747;
+}
+
+.contacts__text--email::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 13px;
+  left: 0;
+  background: url('../img/icon-mail.svg') no-repeat center;
+  background-size: contain;
 }
 
 .contacts__text--phone {
+  position: relative;
   margin: 0;
   margin-bottom: 10px;
   padding-top: 10px;
+  padding-left: 25px;
   font-size: 16px;
   line-height: 22px;
   color: #969595;
   border-top: 1px solid #474747;
 }
 
+.contacts__text--phone::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 13px;
+  left: 0;
+  background: url('../img/icon-phone.svg') no-repeat center;
+  background-size: contain;
+}
+
 .contacts__text--address {
+  position: relative;
   margin: 0;
   margin-bottom: 10px;
   padding-top: 10px;
+  padding-left: 25px;
   font-size: 16px;
   line-height: 22px;
   color: #969595;
   border-top: 1px solid #474747;
+}
+
+.contacts__text--address::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 13px;
+  left: 0;
+  background: url('../img/icon-pin.svg') no-repeat center;
+  background-size: contain;
 }
 
 .footer-nav {
