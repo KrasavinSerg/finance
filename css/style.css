@@ -227,7 +227,7 @@ img {
   left: 30px;
   width: 44px;
   height: 45px;
-  background: url('../img/Icon-creative.png') no-repeat center;
+  background: url('../img/icon-creative.png') no-repeat center;
 }
 
 .features__item--support::before {
@@ -236,7 +236,7 @@ img {
   left: 30px;
   width: 44px;
   height: 43px;
-  background: url('../img/Icon-support.png') no-repeat center;
+  background: url('../img/icon-support.png') no-repeat center;
 }
 
 .values {
